@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class BOJ_14916_거스름돈 {
 
   // dp 풀이
-  public static int[] dp = new int[1000001];
+  /* public static int[] dp = new int[1000001];
   public static void main(String[] args) throws IOException {
 
     BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -31,5 +31,28 @@ public class BOJ_14916_거스름돈 {
     }
 
     System.out.println(dp[target]);
+  }*/
+
+  public static void main(String[] args) throws IOException {
+
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    int target = Integer.parseInt(in.readLine());
+    int count = 0;
+
+    while (true) {
+      if(target % 5 == 0) {
+        count += target/5;
+        break;
+      } else {
+        target -= 2;
+        count++;
+      }
+
+      if(target < 0) {
+        count = -1;
+        break;
+      }
+    }
+    System.out.println(count);
   }
 }

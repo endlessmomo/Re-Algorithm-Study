@@ -30,5 +30,6 @@ public class 행복한_수 {
         System.out.println(sol(19));
         System.out.println(sol(2));
         System.out.println(sol(61));
+        System.out.println(sol(65));
     }
 }

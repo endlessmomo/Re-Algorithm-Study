@@ -26,11 +26,11 @@ public class 특정_거리의_도시_찾기 {
 
     List<Integer>[] cities = new List[N + 1];
 
-    for (int i = 1; i < N; i++) {
+    for (int i = 1; i <= N; i++) {
       cities[i] = new ArrayList<>();
     }
 
-    for (int i = 1; i < M; i++) {
+    for (int i = 1; i <= M; i++) {
       st = new StringTokenizer(in.readLine());
       int a = Integer.parseInt(st.nextToken());
       int b = Integer.parseInt(st.nextToken());
@@ -53,13 +53,19 @@ public class 특정_거리의_도시_찾기 {
       }
 
       for (int next : cities[cur]) {
-        if(dist[next] != INF) continue;
+        if (dist[next] != INF) {
+          continue;
+        }
         dist[next] = dist[cur] + 1;
         queue.add(next);
       }
     }
 
-    answer.stream().sorted()
-        .forEach(System.out::println);
+    if (answer.isEmpty()) {
+      System.out.println("-1");
+    } else {
+      answer.stream().sorted()
+          .forEach(System.out::println);
+    }
   }
 }

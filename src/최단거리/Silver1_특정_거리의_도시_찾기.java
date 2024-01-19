@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class 특정_거리의_도시_찾기 {
+public class Silver1_특정_거리의_도시_찾기 {
 
   static final int INF = -1;
   static List<Integer> answer = new ArrayList<>();

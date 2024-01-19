@@ -1,4 +1,4 @@
-package 너비완전탐색_BFS;
+package 완전탐색.BFS;
 
 import java.io.BufferedReader;
 import java.io.IOException;

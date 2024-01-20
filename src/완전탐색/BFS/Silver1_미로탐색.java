@@ -50,11 +50,7 @@ public class Silver1_미로탐색 {
         int dy = cur[1] + dY[i];
 
         if (dx >= 0 && dy >= 0 && dy < N && dx < M) {
-          if (board[dy][dx] == 0) {
-            continue;
-          }
-
-          if (!visited[dy][dx]) {
+          if (board[dy][dx] != 0 && !visited[dy][dx]) {
             board[dy][dx] = board[dy][dx] + board[cur[1]][cur[0]];
             visited[dy][dx] = true;
             queue.offer(new int[]{dx, dy});

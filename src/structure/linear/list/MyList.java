@@ -1,4 +1,4 @@
-package structure.linear.list.linked;
+package structure.linear.list;
 
 public interface MyList<E> {
     boolean add(E value);

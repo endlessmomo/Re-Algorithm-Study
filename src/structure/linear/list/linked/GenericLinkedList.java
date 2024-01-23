@@ -1,5 +1,7 @@
 package structure.linear.list.linked;
 
+import structure.linear.list.MyList;
+
 import java.util.Arrays;
 
 @SuppressWarnings("unchecked")
